@@ -38,8 +38,8 @@ int area_rectangle(struct rectangle r) {
 
 ```c
 struct point rectangle_center(struct rectangle r) {
-    return (struct point) {(r.lower_right.x - r.upper_left.x) / 2,
-                           (r.lower_right.y - r.upper_left.y) / 2};
+    return (struct point) {(r.lower_right.x + r.upper_left.x) / 2,
+                           (r.lower_right.y + r.upper_left.y) / 2};
 }
 ```
 
